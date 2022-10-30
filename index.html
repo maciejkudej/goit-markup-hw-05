@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <title>WebStudio-Start</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo navigation-logo" href="index.html"
+            ><span style="color: var(--brand-blue)">Web</span
+            ><span>Studio</span></a
+          >
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
+              <a class="link" href="index.html">Agencja</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="link" href="index.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-list list">
+          <li class="contact-list-item">
+            <a class="contact" href="mailto:info@devstudio.com">
+              <svg class="icon-envelope" width="16" height="12">
+                <use href="images/icons.svg#icon-envelope_mk"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-list-item">
+            <a class="contact" href="tel:48123456789">
+              <svg class="icon-smartphone" width="10" height="16">
+                <use href="images/icons.svg#icon-smartphone_mk"></use>
+              </svg>
+              +48 123 456 789</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section background-img">
+        <div class="container">
+          <div class="title-container">
+            <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            <button class="button" type="button">Zamów usługę</button>
+          </div>
+        </div>
+      </section>
+      <section class="section applications">
+        <div class="container">
+          <div>
+            <h2 class="hidden">INTUICYJNE APLIKACJE</h2>
+            <ul class="application-list list">
+              <li class="application-list-item">
+                <div>
+                  <div class="i-style">
+                    <svg width="70" height="70">
+                      <use href="images/icons.svg#icon-antenna-1_mk"></use>
+                    </svg>
+                  </div>
+                  <h3 class="small-header">LOREM IPSUM</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+              <li class="application-list-item">
+                <div>
+                  <div class="i-style">
+                    <svg width="70" height="70">
+                      <use href="images/icons.svg#icon-clock-1_mk"></use>
+                    </svg>
+                  </div>
+                  <h3 class="small-header">LOREM IPSUM</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+              <li class="application-list-item">
+                <div>
+                  <div class="i-style">
+                    <svg width="70" height="70">
+                      <use href="images/icons.svg#icon-diagram-1_mk"></use>
+                    </svg>
+                  </div>
+                  <h3 class="small-header">LOREM IPSUM</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+              <li class="application-list-item">
+                <div>
+                  <div class="i-style">
+                    <svg width="70" height="70">
+                      <use href="images/icons.svg#icon-astronaut-1_mk"></use>
+                    </svg>
+                  </div>
+                  <h3 class="small-header">LOREM IPSUM</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="big-header">Czym się zajmujemy</h2>
+          <ul class="presentation-list list">
+            <li>
+              <img
+                src="images/closeup.jpg"
+                alt="couple"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/webdesigners.jpg"
+                alt="laptop"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/createartist.jpg"
+                alt="project"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section designers team">
+        <div class="container">
+          <div>
+            <h2 class="big-header">Nasz zespół</h2>
+            <ul class="designers-list list">
+              <li class="white designers-photo">
+                <img
+                  src="images/simon.jpg"
+                  alt="john"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="small-header-index">John Doe</h3>
+                <h4 class="photo-text">Product designer</h4>
+                <div class="icons-social-media">
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_t"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_f"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_in"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="white designers-photo">
+                <img
+                  src="images/cher.jpg"
+                  alt="joline"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="small-header-index">John Doe</h3>
+                <h4 class="photo-text">Frontend Developer</h4>
+                <div class="icons-social-media">
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_t"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_f"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_in"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="white designers-photo">
+                <img
+                  src="images/mark.jpg"
+                  alt="michael"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="small-header-index">John Doe</h3>
+                <h4 class="photo-text">Marketing</h4>
+                <div class="icons-social-media">
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_t"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_f"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_in"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="white designers-photo">
+                <img
+                  src="images/john.jpg"
+                  alt="matthew"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="small-header-index">John Doe</h3>
+                <h4 class="photo-text">Ul designer</h4>
+                <div class="icons-social-media">
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_t"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_f"></use>
+                  </svg>
+                  <svg class="icon-sm" width="44" height="44">
+                    <use href="images/icons.svg#icon-ellipse_mk_in"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="big-header">Nasi klienci</h2>
+          <ul class="clients-list list">
+            <li>
+              <div class="i-border">
+                <svg class="icon-group-style" width="106" height="60">
+                  <use href="images/icons.svg#icon-group_client1_mk"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="i-border">
+                <svg class="icon-group-style" width="106" height="60">
+                  <use href="images/icons.svg#icon-group_client_2_mk"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="i-border">
+                <svg class="icon-group-style" width="106" height="60">
+                  <use href="images/icons.svg#icon-groupclient3_mk"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="i-border">
+                <svg class="icon-group-style" width="106" height="60">
+                  <use href="images/icons.svg#icon-group_client4_mk"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="i-border">
+                <svg class="icon-group-style" width="106" height="60">
+                  <use href="images/icons.svg#icon-group_client5_mk"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="i-border">
+                <svg class="icon-group-style" width="106" height="60">
+                  <use href="images/icons.svg#icon-vector_client6_mk"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer dark">
+      <div class="container">
+        <div class="footer-block">
+          <div>
+            <a class="logo footer-logo" href="index.html"
+              ><span style="color: var(--brand-blue)">Web</span
+              ><span style="color: var(--font-light)">Studio</span></a
+            >
+            <address class="non-italic">
+              <p>m.Warszawa, Aleje Jerozolimskie 21</p>
+              <ul>
+                <li class="list contact-footer-item">
+                  <a class="contact-footer" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="list contact-footer-item">
+                  <a class="contact-footer" href="tel:111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-media-footer">
+            <h3 class="small-header-footer">DOŁĄCZ DO NAS</h3>
+            <div class="icons-social-media-footer">
+              <svg class="icon-sm-footer" width="44" height="44">
+                <use href="images/icons.svg#icon-ellipse_mk"></use>
+              </svg>
+              <svg class="icon-sm-footer" width="44" height="44">
+                <use href="images/icons.svg#icon-ellipse_mk_t"></use>
+              </svg>
+              <svg class="icon-sm-footer" width="44" height="44">
+                <use href="images/icons.svg#icon-ellipse_mk_f"></use>
+              </svg>
+              <svg class="icon-sm-footer" width="44" height="44">
+                <use href="images/icons.svg#icon-ellipse_mk_in"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
