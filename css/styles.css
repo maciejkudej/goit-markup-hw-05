@@ -79,6 +79,7 @@ img {
   color: var(--font-normal);
   text-decoration: none;
   font-weight: 500;
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -108,6 +109,7 @@ img {
   color: var(--font-dark);
   text-decoration: none;
   font-weight: 500;
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .activ:after {
@@ -140,6 +142,8 @@ img {
   padding: 11px 41px;
   border: none;
   border-radius: 4px;
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -297,12 +301,6 @@ img {
   display: flex;
 }
 
-*:hover,
-*:focus {
-  transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .navigation-list {
   display: flex;
   align-items: center;
@@ -433,12 +431,18 @@ img {
   position: relative;
   bottom: -1px;
   margin-right: 10px;
+  --color1: currentColor;
+  --color2: currentColor;
+  --color5: currentColor;
 }
 
 .icon-smartphone {
   position: relative;
   bottom: -3px;
   margin-right: 10px;
+  --color1: currentColor;
+  --color2: currentColor;
+  --color5: currentColor;
 }
 
 .i-style {
@@ -454,10 +458,21 @@ img {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 30px;
+  gap: 10px;
 }
 
-.icon-sm:hover,
-.icon-sm:focus {
+.icon-social-media {
+  color: var(--font-light);
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-sm {
+  --color1: currentColor;
+}
+
+.icon-social-media:hover,
+.icon-social-media:focus {
+  color: var(--brand-blue);
   --color1: var(--brand-blue);
   --color2: var(--font-light);
 }
@@ -472,19 +487,39 @@ img {
 .i-border {
   display: flex;
   padding: 16px 32px;
+  color: var(--clients-border);
   border: 1px solid var(--clients-border);
   border-radius: 4px;
+  /* border: 1px solid var(--clients-border);
+  border-radius: 4px; */
+  /* --color4: currentColor; */
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .i-border:hover,
 .i-border:focus {
-  --color4: var(--brand-blue);
+  color: var(--brand-blue);
+  cursor: pointer;
   border: 1px solid var(--brand-blue);
+  /* --color4: var(--brand-blue);
+  border: 1px solid var(--brand-blue); */
 }
 
 .icon-group-style {
   display: flex;
   flex-direction: row;
+  /* border: 1px solid var(--clients-border);
+  border-radius: 4px; */
+  --color4: currentColor;
+  /* transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.icon-group-style:hover {
+  /* border: 1px solid var(--brand-blue); */
 }
 
 .small-header-footer {
