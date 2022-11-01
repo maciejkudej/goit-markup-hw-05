@@ -79,7 +79,7 @@ img {
   color: var(--font-normal);
   text-decoration: none;
   font-weight: 500;
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -94,6 +94,7 @@ img {
   color: var(--font-contact-footer);
   text-decoration: none;
   font-weight: 400;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover,
@@ -109,7 +110,7 @@ img {
   color: var(--font-dark);
   text-decoration: none;
   font-weight: 500;
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .activ:after {
@@ -142,8 +143,8 @@ img {
   padding: 11px 41px;
   border: none;
   border-radius: 4px;
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -389,6 +390,9 @@ img {
   font-family: inherit;
   display: block;
   padding: 6px 22px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-list {
@@ -407,6 +411,10 @@ img {
   font-weight: 400;
   line-height: 1.71;
   padding-top: 4px;
+}
+
+.portfolio-item {
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -463,7 +471,7 @@ img {
 
 .icon-social-media {
   color: var(--font-light);
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-sm {
@@ -490,8 +498,8 @@ img {
   color: var(--clients-border);
   border: 1px solid var(--clients-border);
   border-radius: 4px;
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .i-border:hover,
@@ -515,30 +523,6 @@ img {
   padding-bottom: 20px;
 }
 
-/* .icons-social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 30px;
-  gap: 10px;
-}
-
-.icon-social-media {
-  color: var(--font-light);
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-sm {
-  --color1: currentColor;
-}
-
-.icon-social-media:hover,
-.icon-social-media:focus {
-  color: var(--brand-blue);
-  --color1: var(--brand-blue);
-  --color2: var(--font-light);
-} */
-
 .icons-social-media-footer {
   display: flex;
   flex-direction: row;
@@ -549,7 +533,7 @@ img {
 
 .icon-social-media-footer {
   color: var(--sm-icon-color-footer);
-  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-sm-footer {
@@ -588,7 +572,7 @@ img {
   background-color: var(--shadow-black-ten);
   /* transition: transform 0.25s; */
   opacity: 1;
-  transition: transform 2s, opacity 2s;
+  transition: transform 0.25s, opacity 0.25s;
 }
 
 .close-btn {
@@ -607,4 +591,5 @@ img {
   pointer-events: none;
   transform: translateY(-100%);
   opacity: 0;
+  visibility: inherit;
 }
