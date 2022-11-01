@@ -490,14 +490,8 @@ img {
   color: var(--clients-border);
   border: 1px solid var(--clients-border);
   border-radius: 4px;
-  /* border: 1px solid var(--clients-border);
-  border-radius: 4px; */
-  /* --color4: currentColor; */
   transition: color 2s cubic-bezier(0.4, 0, 0.2, 1),
     border-color 2s cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1); */
-  /* transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .i-border:hover,
@@ -505,21 +499,12 @@ img {
   color: var(--brand-blue);
   cursor: pointer;
   border: 1px solid var(--brand-blue);
-  /* --color4: var(--brand-blue);
-  border: 1px solid var(--brand-blue); */
 }
 
 .icon-group-style {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid var(--clients-border);
-  border-radius: 4px; */
   --color4: currentColor;
-  /* transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.icon-group-style:hover {
-  /* border: 1px solid var(--brand-blue); */
 }
 
 .small-header-footer {
@@ -530,24 +515,50 @@ img {
   padding-bottom: 20px;
 }
 
+/* .icons-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.icon-social-media {
+  color: var(--font-light);
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-sm {
+  --color1: currentColor;
+}
+
+.icon-social-media:hover,
+.icon-social-media:focus {
+  color: var(--brand-blue);
+  --color1: var(--brand-blue);
+  --color2: var(--font-light);
+} */
+
 .icons-social-media-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 30px;
+  gap: 10px;
+}
+
+.icon-social-media-footer {
+  color: var(--sm-icon-color-footer);
+  transition: color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-sm-footer {
-  --color1: var(--sm-icon-color-footer);
-  --color2: var(--font-light);
+  --color1: currentColor;
 }
 
-.icon-sm-footer:not(:last-child) {
-  margin-right: 10px;
-}
-
-.icon-sm-footer:hover,
-.icon-sm-footer:focus {
+.icon-social-media-footer:hover,
+.icon-social-media-footer:focus {
+  color: var(--brand-blue);
   --color1: var(--brand-blue);
   --color2: var(--font-light);
 }
